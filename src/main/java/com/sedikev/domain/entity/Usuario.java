@@ -31,7 +31,7 @@ public class Usuario {
 
     @OneToMany(mappedBy = "proveedor", cascade = CascadeType.ALL)
     @JsonIgnore
-    private List<Lote> lista_lote;
+        private List<Lote> lista_lote;
 
     @OneToMany(mappedBy = "comprador", cascade = CascadeType.ALL)
     @JsonIgnore
@@ -41,7 +41,7 @@ public class Usuario {
     @JsonIgnore
     private List<Pago> lista_pago;
 
-    @OneToMany(mappedBy = "comprador", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "proveedor", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<Gasto> lista_gasto;
 }
